@@ -1,6 +1,7 @@
 package com.todo.service;
 
 import java.lang.StackWalker.Option;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -48,5 +49,10 @@ public class TaskService  {
 	
 	public Optional<Task> findById(long id) {
 		return repo.findById(id);
+	}
+	
+	public List<Task> findForToday(){
+		LocalDate today = LocalDate.now();
+		return repo.getForToday(today.toString());
 	}
 }

@@ -37,6 +37,12 @@ public class TaskController {
 		return new ResponseEntity<>(list, HttpStatus.OK);
 	}
 
+	@GetMapping("/taskForToday")
+	public ResponseEntity<List<Task>> taskForToday(){
+		List<Task> list = service.findForToday();
+		return new ResponseEntity<>(list,HttpStatus.OK);
+	}
+	
 	@PostMapping("/createTask")
 	public ResponseEntity<Task> createTask(@RequestBody Task task) {
 		
