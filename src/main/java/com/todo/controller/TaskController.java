@@ -34,12 +34,18 @@ public class TaskController {
 	@GetMapping("/tasks")
 	public ResponseEntity<List<Task>> findAll() {
 		List<Task> list = service.findAll();
+		if(list.isEmpty()) {
+			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+		}
 		return new ResponseEntity<>(list, HttpStatus.OK);
 	}
 
 	@GetMapping("/taskForToday")
 	public ResponseEntity<List<Task>> taskForToday(){
 		List<Task> list = service.findForToday();
+		if(list.isEmpty()) {
+			return new ResponseEntity<>(null,HttpStatus.NOT_FOUND);
+		}
 		return new ResponseEntity<>(list,HttpStatus.OK);
 	}
 	
