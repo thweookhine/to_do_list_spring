@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+/home/thwe/Documents/projects/to_do_list/todo/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes

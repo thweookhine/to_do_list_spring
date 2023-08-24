@@ -6,6 +6,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/thwe/Documents/projects/to_do_list/todo"/>
+			<item value="/home/thwe/Documents/projects/to_do"/>
+			<item value="/home/thwe/Documents/projects/to_do_list/todo_react"/>
 			<item value="/home/thwe/Documents/projects/todo"/>
 		</list>
 	</section>

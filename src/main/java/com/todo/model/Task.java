@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 import jakarta.annotation.Generated;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,8 +23,9 @@ public class Task {
 	private Long id;
 	private String title;
 	private String description;
+	@Column(columnDefinition = "boolean default false")
+	private boolean isComplete;
 	private LocalDate date;
 	private LocalTime time;
-	
 	
 }
